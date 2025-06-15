@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #e0f7ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #ff6fa0;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative; /* เพิ่มตรงนี้เพื่อจำกัดพื้นที่ปุ่มวิ่ง */
+  height: 40px; /* กะความสูงพอดีปุ่ม */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #ff9acb;
+  color: white;
+}
+
+#yesBtn:hover {
+  background-color: #ff74b1;
+}
+
+#noBtn {
+  background-color: #eee;
+  color: #333;
+  position: absolute; /* เปลี่ยนจาก relative เป็น absolute */
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+#noBtn:hover {
+  background-color: #ddd;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #ff5d9e;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
